@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> The Box Model</h1>
+    <div class="centered">
+        <ul>
+            <li> <span class="text-bold">Content:</span> Elements/text inside the element.</li>
+            <li><span class="text-bold">Padding:</span> Space Between the Content and the Border.</li>
+            <li><span class="text-bold">Border:</span> The edge of the element.</li>
+            <li><span class="text-bold">Margin:</span> Space Outside of the Element.</li>
+        </ul>
+    </div>
+
+    <div class="container centered">
+        <div class="box">
+            <p>Content!</p>
+        </div>
+        <div class="box">
+            <p>Content!</p>
+        </div>
+        <div class="box">
+            <p>Content!</p>
+        </div>
+
+    </div>
+
+    <!-- Divs are block elements by default, they don't let things in next to them! -->
+    <div class="bg-teal box-block">
+
+    </div>
+    <!-- When deciding when to use display: inline-block, ask yourself: do you want the elements side by side, or on top of each other? -->
+
+
+    <div class="box inline-b">
+
+    </div>
+    <div class="box inline-b">
+
+    </div>
+    <div class="box inline-b">
+
+    </div>
+
+
+
+</body>
+
+</html>
