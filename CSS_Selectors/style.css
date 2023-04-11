@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+
+/* Universal Selector */
+
+* {
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0;
+    padding: 0;
+    /* border: 1px red dotted; */
+}
+
+/*  Type Selector */
+
+h2 {
+    color: pink;
+}
+
+img {
+    height: 100px;
+}
+
+/* Class Selector */
+
+.text-red {
+    color: red;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+
+
+/* 
+ID Selector 
+IDs are unique and must only be used one time per html document!
+*/
+
+#text-yellow {
+    color: yellow;
+}
+
+#headline {
+    text-decoration: underline;
+    color: rebeccapurple;
+    font-weight: bold;
+}

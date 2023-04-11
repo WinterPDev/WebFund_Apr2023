@@ -1,0 +1,87 @@
+/* 
+
+Types of Selectors:
+
+Universal selector: selects all elements
+
+Type selector: selects elements based on their tag name in HTML
+
+Class selector: selects elements based on their class attribute
+
+ID selector: selects elements based on their ID attribute
+
+Attribute selector: selects elements based on their attribute value
+
+Descendant combinator: selects elements that are descendants of another element
+
+Child combinator: selects elements that are direct children of another element
+
+Examples Below!
+*/
+
+/* 
+
+Universal Selectors
+
+Resetters (padding: 0; margin: 0;) are used to remove default formatting the browser does to all web pages. 
+This prevents whitespace and gaps you may have seen when working on your assignments.
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Type Selector */
+
+
+h1 {
+    color: red;
+    background-color: black;
+}
+
+/*  Class Selector */
+
+.bg-dark {
+    background-color: rgb(50, 50, 50);
+}
+
+.text-white {
+    color: white;
+}
+
+/* ID Selector */
+
+#headline {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Attribute Selector */
+
+[href='https://www.nintendo.com/'] {
+    color: white;
+    background-color: red;
+    border: solid black 2px;
+    margin: 20px;
+}
+
+/* Descendant Combinator */
+
+div p {
+    color: gray;
+    font-style: italic;
+}
+
+/* Child Combinator */
+
+div>p {
+    color: blueviolet;
+}
+
+/* 
+The difference between a descendant combinator and a child combinator is that 
+the descendant combinator selects all elements that are descendants of another element, 
+while the child combinator selects only the direct children of another element.
+*/
