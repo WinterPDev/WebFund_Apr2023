@@ -7,6 +7,20 @@
     /* border: 1px red dotted; */
 }
 
+.top {
+    margin-top: 100px;
+    background-color: red;
+    height: 5000px;
+}
+
+
+.top img {
+    position: sticky;
+    top: 0;
+    /* top: 150px; */
+}
+
+
 ul {
     list-style: none;
     gap: 40px;
