@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="list">
+        <h2>Objectives:</h2>
+        <ul>
+            <li>Swap the picture of the Pokemon to it's evolution.</li>
+            <li>Update the name of the Pokemon.</li>
+            <li>Implement a counter to increment for each button click.</li>
+        </ul>
+    </div>
+
+    <div class="box m-center">
+
+        <h1 id="pokeName">Shinx</h1>
+        <img id="pokeImg"
+            src="https://archives.bulbagarden.net/media/upload/thumb/5/58/0403Shinx.png/600px-0403Shinx.png"
+            alt="Shinx">
+        <button onclick="evolvePokemon('#counter')" class="btn">Click to Evolve Pokemon</button>
+        <p class="txt-c">
+            <span id="counter">0</span>
+            Clicks!
+        </p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
