@@ -3,15 +3,14 @@ console.log('JS Script connected!');
 
 // Global variables for our HTML elements:
 
-let poke0img = document.querySelector('#poke0Image');
-let poke1img = document.querySelector('#poke1Image');
-let poke2img = document.querySelector('#poke2Image');
-let poke3img = document.querySelector('#poke3Image');
-
-let poke0name = document.querySelector('#poke0Name');
-let poke1name = document.querySelector('#poke1Name');
-let poke2name = document.querySelector('#poke2Name');
-let poke3name = document.querySelector('#poke3Name');
+// let poke0img = document.querySelector('#poke0Image');
+// let poke1img = document.querySelector('#poke1Image');
+// let poke2img = document.querySelector('#poke2Image');
+// let poke3img = document.querySelector('#poke3Image');
+// let poke0name = document.querySelector('#poke0Name');
+// let poke1name = document.querySelector('#poke1Name');
+// let poke2name = document.querySelector('#poke2Name');
+// let poke3name = document.querySelector('#poke3Name');
 
 
 // ==============================================================
