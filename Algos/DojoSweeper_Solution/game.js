@@ -33,17 +33,44 @@ function render(theDojo) {
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
     let total = 0;
-    // i is which array we're in
-    // j is array position
+
+    console.log({ i, j })
+    // i is which array we start in. (The row we click on)
+    // j is the index inside the array. (the specific location inside the array we clicked.)
+
+    // Restart code if you click a box with a ninja inside.
     if (theDojo3[i][j] == 1) {
         gameStatus.innerHTML = `<h2>Game Over!</h2> \n <button onclick="restartGame()">Restart</button>`
         dojoDiv.innerHTML = render([])
     }
 
+    // The outter for loop controls for what row we are in. The first index value of the nested array.
+    // For example: theDojo[0] == '[1, 0, 1, 1, 1, 0, 4, 0, 8, 0]'
+
+    /*-----------------
+    The condition in the outter for loop is doing two checks:
+        1. Run until the third row is read. ( row <= i + 1 )
+        2. And only running if that row value is less than the length of the entire Dojo board. (row < theDojo3.length)
+
+    This makes sure that we don't leave the array at the end if we click a square at the bottom of the grid.
+    */
     for (let row = i - 1; row <= i + 1 && row < theDojo3.length; row++) {
-        if (row >= 0) { // make sure row does not leave the grid
+
+        if (row >= 0) { // make sure row does not leave the grid after subtracting 1.
+
+            // The inner for loop controls for which value of the inner arrays we are pointing to. 
+            // For example: theDojo[0][0]== 1
+
+            /*-----------------
+            The condition in the inner for loop is doing two checks:
+                1. Run until the third value is read. ( col <= j + 1 )
+                2. And only running if that row value is less than the length of the current row(less than 10). ( col < theDojo3[0].length )
+        
+            This makes sure that we don't leave the array at the end when checking for values.
+            */
             for (var col = j - 1; col <= j + 1 && col < theDojo3[0].length; col++) {
-                if (!(row === i && col === j) && col >= 0) { // Ignore the selected square and make sure column does not leave the grid
+                // Ignore the selected square and make sure column does not leave the grid after subtracting 1 above.
+                if (!(row === i && col === j) && col >= 0) {
                     total += theDojo3[row][col]
                 }
             }

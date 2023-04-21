@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0;
+    padding: 0;
+    /* border: 1px red dotted; */
+}
+
+
+.text-red {
+    color: red !important;
+}
