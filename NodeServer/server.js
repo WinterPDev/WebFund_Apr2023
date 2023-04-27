@@ -1,15 +1,24 @@
-const http = require('http');
-const url = require('url');
-const fs = require('fs');
+const home = `<h1>Home Page</h1>`;
+const about = `<h1>About Page</h1>`;
+const contact = `<h1>Contact Page</h1>`;
 
-http.createServer((req, res) => {
-    fs.readFile('index.html', (err, data) => {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        // let q = url.parse(req.url, true).query;
-        // let txt = q.year + " " + q.month;
-        res.write(data);
-        res.end();
-    });
-}).listen(8000);
+const routes = {
+    '/': home,
+    '/about': about,
+    '/contact': contact
+}
 
-console.log('Server Online! Listening on Port 8000');
+const displayDiv = document.querySelector('#display');
+displayDiv.innerHTML = routes[window.location.pathname]
+
+const onNavigate = (pathname) => {
+    window.history.pushState(
+        {},
+        pathname,
+        window.location.origin + pathname)
+    displayDiv.innerHTML = routes[pathname];
+}
+
+window.onpopstate = () => {
+    displayDiv.innerHTML = routes[window.location.pathname]
+}
